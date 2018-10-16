@@ -1,13 +1,18 @@
 # ForecastWeather
-Forecast 5 day weather from OpenWeatherMap For Dublin location
+Forecast 5 day weather using OpenWeatherMap API For Dublin location
+
 MVVM  Architecture
-Protocol-Oriented Programming for Dependency Injection
+
+Protocol-Oriented Programming for Dependency Injection to acchieve higher testability and flexibility
+
 Unit Tests
 
 How to build
 
 Clone the repository
+
 $ git clone https://github.com/kneeloy/ForecastWeather.git
+
 Open the workspace in Xcode
 
 open "WeatherApp.xcodeproj"
