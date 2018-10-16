@@ -32,7 +32,10 @@ class WeatherViewController: UIViewController, WeatherViewProtocol {
         tableView.dataSource = self
         self.tableView.rowHeight = 110.0
         tableView.addSubview(refreshControl)
-        viewModel.getforecast() { [unowned self ] error in
+        tableView.tableHeaderView = createTableHeaderView()
+        let loadingIndicator = UIViewController.displayLoadingIndicator(onView: self.view)
+        viewModel.getforecast() { [unowned self, loadingIndicator ] error in
+            UIViewController.removeLoadingIndicator(spinner: loadingIndicator)
             guard let error = error as? WeatherAppError else {
                 self.updateView()
                 return
@@ -70,6 +73,17 @@ class WeatherViewController: UIViewController, WeatherViewProtocol {
 
             self.present(alertController, animated: true, completion:nil)
         }
+    }
+
+    private func createTableHeaderView() -> UIView {
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 50))
+        let myLabel = UILabel()
+        myLabel.frame = CGRect(x: 10, y: 0, width: tableView.frame.width - 70, height: 50)
+        myLabel.textColor = UIColor.gray
+        myLabel.textAlignment = .left
+        myLabel.text = SelectedCity
+        headerView.addSubview(myLabel)
+        return headerView
     }
 
     @objc private func refreshWeatherPage(_ sender: Any)
