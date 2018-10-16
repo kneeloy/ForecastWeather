@@ -40,7 +40,7 @@ class ForecastViewModelErrorHandlingTests: XCTestCase {
             case .generalError(_, let message):
                 XCTAssertEqual(message, self.message)
                 break
-            case .networkError(_, let message):
+            case .networkError(_, _):
                 XCTFail("Error")
                 break
             }
