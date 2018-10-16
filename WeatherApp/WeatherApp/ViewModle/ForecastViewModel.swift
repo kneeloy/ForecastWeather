@@ -65,7 +65,7 @@ class ForecastViewModel: ForecastViewModelProtocol {
 
     }
 
-    func refreshWeatherForecast(callBack: @escaping ((Error?) -> ())) {
+    public func refreshWeatherForecast(callBack: @escaping ((Error?) -> ())) {
         getforecast() { error in
 
             guard let error = error else {
