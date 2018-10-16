@@ -21,10 +21,10 @@ class NetworkManager: NetworkManagerProtocol {
     internal func getWeather(from url: String,
                              callBackHandler: @escaping (ForecastList?, Error?) -> ()) {
         guard let serviceUrl = URL(string: url) else { return }
-        print(url)
+
         URLSession.shared.dataTask(with: serviceUrl) { (data, response, error) in
             if let error = error {
-                let error = WeatherAppError.generalError(title: AlertTitleForgeneralError, message: error.localizedDescription)
+                let error = WeatherAppError.generalError(title: AlertTitleForGeneralError, message: error.localizedDescription)
                 callBackHandler(nil, error)
             }
             guard let data = data else { return }
@@ -35,7 +35,7 @@ class NetworkManager: NetworkManagerProtocol {
                 let result = try decoder.decode(ForecastList.self, from: data)
                 callBackHandler(result, nil)
             } catch {
-                let error = WeatherAppError.generalError(title: AlertTitleForgeneralError, message: error.localizedDescription)
+                let error = WeatherAppError.generalError(title: AlertTitleForGeneralError, message: error.localizedDescription)
                 callBackHandler(nil, error)
             }
             }.resume()
