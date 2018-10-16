@@ -29,6 +29,7 @@
 		B7C3E3F021757B52008BB875 /* ForecastViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3E3EC21757B51008BB875 /* ForecastViewModelTests.swift */; };
 		B7C3E3F121757B52008BB875 /* MockWeatherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3E3ED21757B51008BB875 /* MockWeatherDataManager.swift */; };
 		B7C3E3F221757B52008BB875 /* MockFailableWeatherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3E3EE21757B51008BB875 /* MockFailableWeatherDataManager.swift */; };
+		B7C3E3F421758AB1008BB875 /* UIViewController+LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3E3F321758AB1008BB875 /* UIViewController+LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B7C3E3EC21757B51008BB875 /* ForecastViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewModelTests.swift; sourceTree = "<group>"; };
 		B7C3E3ED21757B51008BB875 /* MockWeatherDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockWeatherDataManager.swift; sourceTree = "<group>"; };
 		B7C3E3EE21757B51008BB875 /* MockFailableWeatherDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFailableWeatherDataManager.swift; sourceTree = "<group>"; };
+		B7C3E3F321758AB1008BB875 /* UIViewController+LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadingView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				B7C3E3D121757B13008BB875 /* DateFormatter+CustomDate.swift */,
 				B7C3E3CF21757B13008BB875 /* Error.swift */,
 				B7C3E3D221757B13008BB875 /* Rechability.swift */,
+				B7C3E3F321758AB1008BB875 /* UIViewController+LoadingView.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				B7C3E3DA21757B1D008BB875 /* WeatherDataManager.swift in Sources */,
 				B7C3E3D321757B13008BB875 /* Error.swift in Sources */,
 				B7C3E3DD21757B28008BB875 /* WeatherForecastTableViewCell.swift in Sources */,
+				B7C3E3F421758AB1008BB875 /* UIViewController+LoadingView.swift in Sources */,
 				B7C3E3E721757B39008BB875 /* WeatherDetailInfo.swift in Sources */,
 				B7C3E3D621757B13008BB875 /* Rechability.swift in Sources */,
 				B7AA8C1C217222BA00EDB549 /* AppDelegate.swift in Sources */,
