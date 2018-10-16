@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@testable import WeatherForecast
+@testable import WeatherApp
 
 class MockFailableWeatherDataManager: WeatherForecasting {
     let error: WeatherAppError

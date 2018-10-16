@@ -6,7 +6,7 @@
 //  Copyright © 2018 Niloy. All rights reserved.
 //
 
-@testable import WeatherForecast
+@testable import WeatherApp
 
 class MockWeatherDataManager: WeatherForecasting {
     let forecastList: ForecastList

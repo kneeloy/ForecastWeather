@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import WeatherForecast
+@testable import WeatherApp
 
 class ForecastViewModelErrorHandlingTests: XCTestCase {
 
