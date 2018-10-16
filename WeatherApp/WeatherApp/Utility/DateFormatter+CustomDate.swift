@@ -7,8 +7,8 @@
 //
 
 import Foundation
+
 extension DateFormatter {
-    //Niloy reCheck the iso setting
     static let iso8601Custom: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
